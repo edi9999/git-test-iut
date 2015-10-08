@@ -2,12 +2,14 @@
 
 var fs = require("fs");
 var content = fs.readFileSync(process.argv[2]).toString();
+var lines = content.split("\n");
+
+lines.pop();
+
+
 var sum = 0;
 
-content.split("\n").forEach(function (n) {
-  if(n=="") {
-    return;
-  }
+lines.forEach(function (n) {
   sum+=parseInt(n, 10);
 });
 
