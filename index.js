@@ -6,9 +6,8 @@ var content = fs.readFileSync(process.argv[2]).toString();
 
 var sum = 0;
 
-var splitted = content.split("\n");
 
-splitted.forEach(function (n) {
+content.split("\n").forEach(function (n) {
   if(n=="") {
     return;
   }
