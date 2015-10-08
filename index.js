@@ -1,5 +1,6 @@
 "use strict";
 
+var sum = 0;
 var fs = require("fs");
 var val = 8;
 var lines = fs
@@ -9,8 +10,6 @@ var lines = fs
 
 
 lines.pop();
-
-var sum = 0;
 
 lines.forEach(function (n) {
   sum += parseInt(n, val);
