@@ -1,12 +1,10 @@
 "use strict";
 
 var fs = require("fs");
-var content = fs.readFileSync(process.argv[2]).toString();
+var lines = fs.readFileSync(process.argv[2]).toString().split("\n");
 var val = 8;
-var lines = content.split("\n");
 
 lines.pop();
-
 
 var sum = 0;
 
